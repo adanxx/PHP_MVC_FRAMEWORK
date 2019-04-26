@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine on
+  Options -Multiviews
+  RewriteEngine php_mvc_boilarplate/public
   RewriteRule ^$ public/ [L]
   RewriteRule (.*) public/$1 [L]
 </IfModule>
